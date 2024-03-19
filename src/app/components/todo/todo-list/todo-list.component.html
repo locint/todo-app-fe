@@ -1,0 +1,15 @@
+<div class="todo-list">
+  @for (todo of filteredTodos(); track $index) {
+    <app-todo-card [todo]="todo"></app-todo-card>
+  } @empty {
+    <mat-card class="card"><p style="padding-top: 10px">There are no items.</p></mat-card>
+  }
+
+  <mat-paginator
+    [length]="100"
+    [pageSize]="10"
+    [pageSizeOptions]="[5, 10, 25, 100]"
+    aria-label="Select page"
+  >
+  </mat-paginator>
+</div>

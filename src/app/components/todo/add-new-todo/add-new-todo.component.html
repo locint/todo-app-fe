@@ -1,0 +1,16 @@
+<div class="form-container" [formGroup]="todoForm">
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <input matInput formControlName="desc" />
+  </mat-form-field>
+
+  @if(todoForm.touched && todoForm.invalid){
+    <p>Form has errors. Please fix.</p>
+  }
+  <button mat-flat-button color="primary" class="add-button" (click)="addTodo()">Add TODO</button>
+</div>

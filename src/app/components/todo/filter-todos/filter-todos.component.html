@@ -1,0 +1,8 @@
+<div class="filter">
+  <mat-chip-listbox aria-label="Progress selection">
+    <mat-chip-option [selected]="filter === Filter.ALL" (selectionChange)="setFilter(Filter.ALL)">All</mat-chip-option>
+    <mat-chip-option [selected]="filter === Filter.UNFINISHED" (selectionChange)="setFilter(Filter.UNFINISHED)">Unfinished</mat-chip-option>
+    <mat-chip-option [selected]="filter === Filter.COMPLETED" (selectionChange)="setFilter(Filter.COMPLETED)">Completed</mat-chip-option>
+    <mat-chip-option [selected]="filter === Filter.DELETED" color="warn" (selectionChange)="setFilter(Filter.DELETED)">Deleted</mat-chip-option>
+  </mat-chip-listbox>
+</div>
