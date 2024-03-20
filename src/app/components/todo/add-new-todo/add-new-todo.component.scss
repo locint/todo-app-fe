@@ -1,0 +1,19 @@
+.card {
+  background-color: #95d1cc;
+  margin: 24px;
+  text-align: center;
+}
+
+.form-container {
+  margin-left: 24px;
+}
+
+.form-container mat-form-field + mat-form-field {
+  margin-left: 8px;
+}
+
+.add-button {
+    color: #F6F2D4;
+    float: right;
+    margin-right: 24px;
+}
